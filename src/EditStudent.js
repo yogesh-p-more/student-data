@@ -19,7 +19,7 @@ const EditStudent = () => {
         setphone(data.phone)
       })
       .catch((err) => console.log(err.message));
-  }, []);
+  }, [studentid]);
   const handleSubmit = (e) => {
     e.preventDefault();
     const studentData = { id, name, place, phone };

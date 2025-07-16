@@ -9,7 +9,7 @@ const ViewDetails = () => {
       .then((res) => res.json())
       .then((data) => setStudentData(data))
       .catch((err) => console.log(err.message));
-}, []);
+}, [studentid]);
 
 return (
   <div className='container'>
